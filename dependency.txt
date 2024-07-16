@@ -1,7 +1,18 @@
- npm add graphql-request graphql
+
 
  npm install -g expo-cli
 
 
  if any error
  npm install react@18.3.1 react-dom@18.3.1 --legacy-peer-deps
+ 
+ npm install @strapi/provider-upload-cloudinary --save
+
+ // for navigation
+   npm install @react-navigation/native --legacy-peer-deps
+  npx expo install react-native-screens react-native-safe-area-context
+
+
+// for vedio playing
+npm install expo-av 
+ npm install react-native-video

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_basic_course_topics_basic_course_topics",
+  "info": {
+    "displayName": "BasicCourse-topics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "vedioUrl": {
+      "type": "string"
+    }
+  }
+}

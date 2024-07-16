@@ -5,7 +5,9 @@ import { ClerkProvider,SignedIn,SignedOut } from "@clerk/clerk-expo";
 import TabNavigation from './Navigations/TabNavigation';
 import { NavigationContainer } from "@react-navigation/native";
 import LoginScreen from './Screens/LoginScreen';
-// import Home from './Screens/Home';
+import HomeNavigation from './Navigations/HomeNavigation';
+import MainNavigation from './Navigations/MainNavigation';
+
 
 
 export default function App() {
@@ -15,16 +17,17 @@ export default function App() {
       <SignedIn>
 
       <NavigationContainer>
-       <TabNavigation/>
+        <MainNavigation/>
+        {/* <TabNavigation/>  */}
+        {/* <HomeNavigation/>   */}
      </NavigationContainer>
+    
      
-    </SignedIn>
+      </SignedIn> 
 
-  
-
-    <SignedOut>
-     <LoginScreen/>
-    </SignedOut>
+     <SignedOut>
+    <LoginScreen/>
+     </SignedOut>
 
     </ClerkProvider>
       

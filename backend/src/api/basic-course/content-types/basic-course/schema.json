@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "basic_courses",
+  "info": {
+    "singularName": "basic-course",
+    "pluralName": "basic-courses",
+    "displayName": "BasicCourse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "vedioUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BasicCourseTopics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "basic-course-topics.basic-course-topics"
+    }
+  }
+}

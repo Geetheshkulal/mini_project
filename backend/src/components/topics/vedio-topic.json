@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_component_vedio_topics",
+  "info": {
+    "displayName": "Topics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "vedioUrl": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_topics_contents",
+  "info": {
+    "displayName": "content"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
