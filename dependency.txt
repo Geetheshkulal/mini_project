@@ -1,18 +1,26 @@
 
+npx create-expo-app@latest Education_app --template blank@latest
+npx expo install expo-router 
+npm install -g expo-cli
 
- npm install -g expo-cli
+ // sign up login
 
+ npm install @clerk/clerk-expo
 
- if any error
- npm install react@18.3.1 react-dom@18.3.1 --legacy-peer-deps
- 
- npm install @strapi/provider-upload-cloudinary --save
+ // env file
+
+ EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=YOUR_PUBLISHABLE_KEY
 
  // for navigation
-   npm install @react-navigation/native --legacy-peer-deps
+  npm install @react-navigation/native -
   npx expo install react-native-screens react-native-safe-area-context
 
 
 // for vedio playing
 npm install expo-av 
  npm install react-native-video
+
+ // backend
+  npx create-strapi-app@latest strapi-backend
+  npm install @strapi/provider-upload-cloudinary --save
+  npm i axios

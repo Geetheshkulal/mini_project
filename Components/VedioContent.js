@@ -3,7 +3,7 @@
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Colors  from '../Utils/Colors';
 import { useNavigation } from '@react-navigation/native'
 
 export default function VedioContent({ vedio }) {
@@ -23,20 +23,29 @@ export default function VedioContent({ vedio }) {
       style={{marginTop:10}}
         data={vedio?.vedioTopic} //main
         // keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item,index }) => (
-          <View style={{display:'flex', flexDirection:'row', backgroundColor:'white',marginBottom:7,padding:10,alignItems:'center',borderRadius:5}}>
-            <Text style={{fontWeight:'bold',fontSize:20,color:'grey',marginRight:14}}>{index}</Text>
 
-              
-            <Text style={{fontSize: 15, fontWeight: 'bold'}}>
-           {item.vedioTopic || item.name || 'Coming soon..'}</Text>
-              
-              <TouchableOpacity onPress={()=>onPressVedio(item)}>
-            <Ionicons name="play-circle" size={24}  style={{ marginLeft: 'auto' }}color={Colors.primary} />
-            </TouchableOpacity>
+        renderItem={({ item, index }) => (
+  <View style={{ display: 'flex', flexDirection: 'row', backgroundColor: 'white', marginBottom: 7, padding: 10, alignItems: 'center', borderRadius: 5 }}>
+    <Text style={{ fontWeight: 'bold', fontSize: 20, color: 'grey', marginRight: 14 }}>{index}</Text>
+    
+    <Text style={{ fontSize: 15, fontWeight: 'bold', flex: 1 }}>
+      {item.vedioTopic || item.name || 'Coming soon..'}
+    </Text>
+    
+    <TouchableOpacity onPress={() => onPressVedio(item)}>
+      <View style={{ 
+        flexDirection: 'row', 
+        backgroundColor: 'white', 
+        padding: 10, 
+        alignItems: 'center', 
+        borderRadius: 5 
+      }}>
+        <Ionicons name="play-circle" size={24} style={{ marginLeft: 'auto' }}   color={Colors.Primary} />
+      </View>
+    </TouchableOpacity>
+  </View>
+)}
 
-          </View>
-        )}
 
       />
     </View>

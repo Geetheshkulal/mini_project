@@ -143,7 +143,7 @@ export default function BasicVedioCourseDetails() {
                                     name="play-circle"
                                     size={24}
                                     style={{ marginLeft: 'auto' }}
-                                    color={Colors.primary}
+                                    color={Colors.Primary}
                                 />
                             </View>
                         </TouchableOpacity>

@@ -1,9 +1,10 @@
 
 import { View, Text,Image, TextInput,StyleSheet} from 'react-native'
-import React from 'react'
+import React,{useState} from 'react'
 import { useUser } from '@clerk/clerk-expo'
 import Colors from '../Utils/Colors';
 import { Ionicons } from '@expo/vector-icons';
+import { ScrollView } from 'react-native-web';
 
 export default function Header() {
     const {user}=useUser();
@@ -15,14 +16,17 @@ export default function Header() {
 
        <View>
         <Text style={{fontSize:18,fontFamily:'outfit'}}>welcome,</Text>
-     <Text style={{fontSize:20, fontFamily:'outfit-bold',color:Colors.primary}}>{user?.fullName}</Text>
+     <Text style={{fontSize:20, fontFamily:'outfit-bold',color:Colors.Primary}}>{user?.fullName}</Text>
        </View>
       </View>
     </View>
+
+
     <View style={styles.input}>
     <Ionicons name="search" size={24} color={Colors.grey} />
         <TextInput placeholder='search' style={{fontFamily:'outfit',width:'100%'}}/>
     </View>
+
     </>
 
   )
@@ -45,7 +49,6 @@ const styles=StyleSheet.create(
       }
     }
 )
-
 
 
 

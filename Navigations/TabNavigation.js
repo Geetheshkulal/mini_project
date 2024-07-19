@@ -29,8 +29,11 @@ import React from 'react';
 import HomeScreen from './../Screens/Home';
 import MyCourseScreen from './../Screens/Mycourse';
 import ChatBot from '../Screens/ChatBot';
-import ProfileScreen from './../Screens/Profile';
+import ProfileScreen from './../Screens/ProfileScreen';
+import Quiz from '../Screens/Quiz';
 import { Ionicons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Colors from '../Utils/Colors';
 
@@ -51,18 +54,30 @@ export default function TabNavigation() {
         name='MyCourse' 
         component={ChatBot} 
         options={{
-          tabBarIcon: ({ color, size }) => (<Ionicons name="book-sharp" size={22} color={color} />),
+          tabBarIcon: ({ color, size }) => (<Ionicons name="chatbox" size={22} color={color}/>),
           tabBarLabel: ({ color }) => (<Text style={{ color: color }}>Chat Bot</Text>)
         }} 
       />
+
+    <Tab.Screen 
+        name='Quiz' 
+        component={Quiz} 
+        options={{
+          tabBarIcon: ({ color, size }) => (<MaterialIcons name="quiz" size={22} color={color} />),
+          tabBarLabel: ({ color }) => (<Text style={{ color: color }}>Quiz</Text>)
+        }} 
+      />
+
       <Tab.Screen 
-        name='Profile' 
+        name='ProfileScreen' 
         component={ProfileScreen} 
         options={{
           tabBarIcon: ({ color, size }) => (<Ionicons name="person-sharp" size={22} color={color} />),
           tabBarLabel: ({ color }) => (<Text style={{ color: color }}>Profile</Text>)
         }} 
       />
+
+       
     </Tab.Navigator>
   );
 }

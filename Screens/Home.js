@@ -5,6 +5,7 @@ import Slider from '../Components/Slider';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import VedioCourseList from '../Components/VedioCourseList';
 import BasicCourseList from '../Components/BasicCourseList';
+import Marquee from '../Components/Marquee'
 import { ScrollView } from 'react-native-web';
 
 export default function Home() {
@@ -25,8 +26,8 @@ export default function Home() {
       <Slider/>
       <VedioCourseList/>
       <BasicCourseList/>
-    
-     
+      <Marquee/>
+      
     </View>
 
   )

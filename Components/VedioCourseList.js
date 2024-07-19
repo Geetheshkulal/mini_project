@@ -74,7 +74,7 @@ export default function VedioCourseList() {
     // }
   return (
     <View style={{marginTop:15}}>
-        <Text style={{fontSize:20, fontWeight:'bold', marginBottom:3, marginLeft:14}}>Vedio Course</Text>
+        <Text style={{fontSize:20, fontWeight:'bold', marginBottom:3, marginLeft:14}}>Advance Course</Text>
       <FlatList
       data={vedioList}
       horizontal={true}
