@@ -6,7 +6,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import VedioCourseList from '../Components/VedioCourseList';
 import BasicCourseList from '../Components/BasicCourseList';
 import Marquee from '../Components/Marquee'
-import { ScrollView } from 'react-native-web';
+import { ScrollView } from 'react-native';
 
 export default function Home() {
 
@@ -21,14 +21,14 @@ export default function Home() {
 
   return (
 
-     <View style={{ height:200}}>
+     <ScrollView cstyle={{ height:200}}>
       <Header/>
       <Slider/>
       <VedioCourseList/>
       <BasicCourseList/>
       <Marquee/>
       
-    </View>
+    </ScrollView>
 
   )
 }

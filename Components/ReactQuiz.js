@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, Button, ScrollView, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
 import axios from 'axios';
 
-const GEMINI_API_KEY = "AIzaSyC-GKe8Tq_Gz5sW9czc9XgWJieFX1UArz8";
+import { GEMINI_API_KEY } from '@env';
 
 const ReactQuiz = ({ navigation }) => {
   const [messages, setMessages] = useState([]);

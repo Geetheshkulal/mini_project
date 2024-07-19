@@ -11,6 +11,7 @@ import CQuiz from '../Components/CQuiz';
 import CplusQuiz from '../Components/CplusQuiz';
 import JavaScriptQuiz from '../Components/JavaScriptQuiz';
 import ReactQuiz from '../Components/ReactQuiz';
+import LoginScreen from '../Screens/LoginScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -28,6 +29,8 @@ export default function MainNavigation() {
       <Stack.Screen name='CplusQuiz' component={CplusQuiz}></Stack.Screen>
       <Stack.Screen name='JavaScriptQuiz' component={JavaScriptQuiz}></Stack.Screen>
       <Stack.Screen name='ReactQuiz' component={ReactQuiz}></Stack.Screen>
+      <Stack.Screen name='LoginScreen' component={LoginScreen}></Stack.Screen>
+      
 
     </Stack.Navigator>
   );

@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 90,
   },
-  textContainer: {
+  textContainer: { 
     paddingTop: 30,
     paddingHorizontal: 20,
     marginTop: 20,
@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
   },
   button: {
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.Primary,
     padding: 10,
     margin: 30,
     flexDirection: 'row',

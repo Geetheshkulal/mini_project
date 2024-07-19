@@ -13,7 +13,7 @@ export default function ProfileScreen() {
 
     const handleLogout = async () => {
         await signOut();
-        navigation.replace('Login');
+        navigation.replace('LoginScreen');
     };
 
     return (
