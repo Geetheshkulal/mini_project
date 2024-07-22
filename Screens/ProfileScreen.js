@@ -25,7 +25,7 @@ export default function ProfileScreen() {
                 end={{ x: 1, y: 1 }}
             >
                 <View style={styles.head}>
-                    <Text style={styles.headingText}>EduBox</Text>
+                    <Text style={styles.headingText}>Code Box</Text>
                 </View>
             </LinearGradient>
             <View style={styles.userinfo}>
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     },
     head: {
         alignItems: 'center',
+        marginTop:10
     },
     headingText: {
         color: '#333333',
